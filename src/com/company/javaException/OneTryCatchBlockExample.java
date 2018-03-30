@@ -1,6 +1,6 @@
 package com.company.javaException;
 
-public class OneTryCatchBlockExample {
+public class OneTryCatchBlockExample  {
 
 	/*
 	 * 
