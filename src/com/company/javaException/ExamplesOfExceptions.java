@@ -55,9 +55,9 @@ public class ExamplesOfExceptions {
 		try {
 
 			String str1 = "JavaForBeginners";
-			System.out.println("String length is" + str1.length());
-			char c = str1.charAt(0);
-			c = str1.charAt(num4);
+			System.out.println("String length is " + str1.length());
+			
+			str1.charAt(num4);
 
 		} catch (StringIndexOutOfBoundsException e) {
 			System.out.println("String index is out of bound");
