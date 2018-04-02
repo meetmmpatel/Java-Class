@@ -1,6 +1,6 @@
 package com.company.javaException;
 
-public class OneTryCatchBlockExample  {
+public class OneTryCatchBlockExample {
 
 	/*
 	 * 
@@ -9,6 +9,8 @@ public class OneTryCatchBlockExample  {
 	 * try { //statements that may cause an exception } catch (exception(type)
 	 * e(object))‏ { //error handling code }
 	 * 
+	 * create class, assign main method and one static method for
+	 * arithmeticException;
 	 * 
 	 */
 
@@ -24,7 +26,7 @@ public class OneTryCatchBlockExample  {
 
 		try {
 
-			num1 = 0;
+			num1 = 2;
 			num2 = 50 / num1;
 
 			System.out.println(num2);
@@ -42,11 +44,11 @@ public class OneTryCatchBlockExample  {
 
 	public static void multipleTryCatch() {
 		try {
-			int[] arr = { 3, 5, 78, 98 };
+			int[] arr = { 3, 5, 78, 98,78 };
 			for (int i = 0; i < 6; i++) {
 				System.out.println(arr[i]);
-				
-				//int num3 = 60/0;
+
+				 int num3 = 60/0;
 			}
 
 		} catch (ArrayIndexOutOfBoundsException e1) {

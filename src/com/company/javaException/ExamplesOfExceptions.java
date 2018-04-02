@@ -6,7 +6,7 @@ public class ExamplesOfExceptions {
 
 		arithmeticException(45, 0);
 		arrayIndexOutOfBounds(36);
-		numberFormat("XYC");
+		numberFormat("XYZ");
 		stringIndexOutOfBound(45);
 		nullPointer(null);
 
@@ -70,6 +70,7 @@ public class ExamplesOfExceptions {
 
 			String str2 = str3;
 			System.out.println(str2.length());
+
 
 		} catch (NullPointerException e) {
 			System.out.println("String gets null pointer");

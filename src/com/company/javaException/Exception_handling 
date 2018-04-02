@@ -45,6 +45,17 @@ What is an exception?
 			ArithmeticException, NullPointerException, ArrayIndexOutOfBoundsException etc.
 		
 		
+		Try{
+		10/0
+		}
+		catch{Arithmatic exception 
+		you can not divide number with zero
+		}
 		
+		try{
+		String a = null;
+		}catch{
+		null pointer exeption 
+		}
 		
 		

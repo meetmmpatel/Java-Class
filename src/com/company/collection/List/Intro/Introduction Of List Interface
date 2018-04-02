@@ -1,0 +1,26 @@
+
+Types of List in Java
+
+
+	1. ArrayList 
+	2. LinkedList 
+	3. Vector
+
+they all implement List interface. They are very similar to use. Their main difference is their implementation which causes different performance for different operations.
+
+	ArrayList is implemented as a resizable array. As more elements are added to ArrayList, its size is increased dynamically. It's elements can be accessed directly by using the get and set methods, since ArrayList is essentially an array.
+
+	LinkedList is implemented as a double linked list. Its performance on add and remove is better than Arraylist, but worse on get and set methods.
+
+	Vector is similar with ArrayList, but it is synchronized.
+
+	ArrayList is a better choice if your program is thread-safe. Vector and ArrayList require more space as more elements are added. 
+		Vector each time doubles its array size, while ArrayList grow 50% of its size each time. 
+		LinkedList, however, also implements Queue interface which adds more methods than ArrayList and Vector, such as offer(), peek(), poll(), etc.
+
+	
+	Note: The default initial capacity of an ArrayList is pretty small. 
+		  It is a good habit to construct the ArrayList with a higher initial capacity. 
+		  This can avoid the resizing cost.
+
+
