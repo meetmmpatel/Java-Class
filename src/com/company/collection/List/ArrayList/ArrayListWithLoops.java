@@ -47,7 +47,7 @@ public class ArrayListWithLoops {
 		Iterator in = arrList.iterator();
 
 		while (in.hasNext()) {
-			System.out.println("Iterator" + in.next());
+			System.out.println("Iterator: " + in.next());
 		}
 
 		Enumeration<Integer> e = Collections.enumeration(arrList);

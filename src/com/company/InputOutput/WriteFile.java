@@ -15,12 +15,12 @@ public class WriteFile {
 
 		file = new File("/Users/milan/Desktop/NewTextFile.txt");
 
-		try {
-			fo = new FileOutputStream(file);
-		} catch (FileNotFoundException e) {
-			System.out.println("Print File Exception Found");
-			e.printStackTrace();
-		}
+			try {
+				fo = new FileOutputStream(file);
+			} catch (FileNotFoundException e) {
+				System.out.println("Print File Exception Found");
+				e.printStackTrace();
+			}
 
 		byte[] bArray = myContent.getBytes();
 
