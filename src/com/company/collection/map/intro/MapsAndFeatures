@@ -6,6 +6,7 @@ Maps in Java
 3. Hashtable 
 
 	HashMap doesn’t maintain any order.
+		-Also HashMap will allow duplicate keys but only last key will print the value.
 	TreeMap sort the entries in ascending order of keys.
 	LinkedHashMap maintains the insertion order.
 

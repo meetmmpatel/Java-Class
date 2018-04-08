@@ -1,0 +1,61 @@
+What is an exception?
+	An Exception is an unwanted event that interrupts the normal flow of the program. 
+	When an exception occurs program execution gets terminated. 
+	
+	
+	Difference between error and exception
+		Errors: indicate that something severe enough has gone wrong, 
+				the application should crash rather than try to handle the error.
+
+		Exceptions: are events that occurs in the code. 
+					A programmer can handle such conditions and take necessary corrective actions. 
+		
+		Few examples:
+		
+			NullPointerException – When you try to use a reference that points to null.
+			
+			ArithmeticException – When bad data is provided by user, for example, 
+				when you try to divide a number by zero this exception occurs because dividing a number by zero is undefined.
+			
+			ArrayIndexOutOfBoundsException – When you try to access the elements of an array out of its bounds, 
+				for example array size is 5 (which means it has five elements) and you are trying to access the 10th element.
+				
+	
+	Types of exceptions
+		There are two types of exceptions in Java:
+		1)Checked exceptions
+		2)Unchecked exceptions
+
+
+
+		Checked exceptions
+		
+			All exceptions other than Runtime Exceptions are known as Checked exceptions as 
+			the compiler checks them during compilation to see whether the programmer has handled them or not. 
+			If these exceptions are not handled/declared in the program, you will get compilation error. 
+			For example, SQLException, IOException, ClassNotFoundException etc.
+
+		Unchecked Exceptions
+		
+			Runtime Exceptions are also known as Unchecked Exceptions. 
+			These exceptions are not checked at compile-time so compiler does not check whether 
+			the programmer has handled them or not 
+			but it’s the responsibility of the programmer to handle these exceptions and provide a safe exit. 
+			For example, 
+			ArithmeticException, NullPointerException, ArrayIndexOutOfBoundsException etc.
+		
+		
+		Try{
+		10/0
+		}
+		catch{Arithmatic exception 
+		you can not divide number with zero
+		}
+		
+		try{
+		String a = null;
+		}catch{
+		null pointer exeption 
+		}
+		
+		

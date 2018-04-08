@@ -13,6 +13,12 @@ public class JavaVariables {
 		
 		System.out.println("Output: " + total);
 		
+		String name = "Mike";
+		String name1 = "Mike";
+		
+		System.out.println(name == name1);
+		System.out.println(name.equals(name1));
+		
 		
 		
 	}

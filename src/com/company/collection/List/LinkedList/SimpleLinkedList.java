@@ -12,6 +12,7 @@ public class SimpleLinkedList {
 
 	public static void linkedList() {
 		LinkedList<String> link = new LinkedList<>();
+		
 		link.add("DC");
 		link.add("New York");
 		link.add("Boston");

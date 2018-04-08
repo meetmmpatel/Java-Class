@@ -3,6 +3,7 @@ package com.company.collection.List.LinkedList;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.ListIterator;
 
 public class LinkedListWithLoops {
 	public static void main(String[] args) {
@@ -21,16 +22,37 @@ public class LinkedListWithLoops {
 		for (int counter = 0; counter < dLink.size(); counter++) {
 			System.out.println(dLink.get(counter));
 		}
+		
 		System.out.println("After For Loop: " + dLink);
+		
+		
 
 		for (double num : dLink) {
 			System.out.println("For Each loop: " + num);
 		}
+		
+		
 
 		Iterator it = dLink.iterator();
+		
 		while (it.hasNext()) {
 			System.out.println("Iterator with While loop : " + it.next());
 		}
+		
+		
+		
+		
+		 ListIterator listIt = dLink.listIterator();
+		 
+		 while (listIt.hasNext()) {
+			 System.out.println("With ListIterator: " + listIt.next());
+		 }
+		 
+		 while(listIt.hasPrevious()) {
+			 System.out.println("Reverse List: " + listIt.previous());
+		 }
+		
+		
 	}
 
 }

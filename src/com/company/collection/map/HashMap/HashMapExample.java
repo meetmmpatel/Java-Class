@@ -12,14 +12,15 @@ public class HashMapExample {
 	}
 
 	public static void hashMapTest() {
-		HashMap<Integer, String> hMap = new HashMap<Integer, String>();
+		Map<Integer, String> hMap = new HashMap<Integer, String>();
 
 		hMap.put(2, "VA");
 		hMap.put(34, "MA");
 		hMap.put(4, "NY");
 		hMap.put(78, "KY");
 		hMap.put(89, "NC");
-
+		System.out.println(hMap);
+		
 		System.out.println("Index of 78 is " + hMap.get(78));
 		System.out.println("=====================");
 		System.out.println("Size of hMap is " + hMap.size());
@@ -38,7 +39,7 @@ public class HashMapExample {
 
 		while (it.hasNext()) {
 			Map.Entry mEntry = (Map.Entry) it.next();
-			System.out.println("Key is " + mEntry.getKey() + " Value is: ");
+			System.out.print("Key is " + mEntry.getKey() + " Value is: ");
 			System.out.println(mEntry.getValue());
 		}
 
